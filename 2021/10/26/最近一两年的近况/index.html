@@ -20,23 +20,19 @@
     var CONFIG = {"hostname":"www.zhousong-ld.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="只是有了搭建一个属于自己网站的冲动，对服务器、域名基本没什么了解，刚开始的时候其实是处于一种懵逼状态的。那么最开始我是从哪里入手的呢？Hexo。在明白自己想要建一个什么样的网站之后，去寻找我想要一个什么要的博客网站，它是怎么做的。这里贴上我同事的个人博客网站http:&#x2F;&#x2F;www.zhanglongdream.com&#x2F;  一、本地安装Hexo，及其学习使用Hexo中文文档   Hexo上手起来还是">
+  <meta name="description" content="眨眼间距离搭建这个网站已经过去三年多了啊。   我从去上海，到现在又离开上海，中间换了一家公司，接触了很多人，也学到了很多新的技术。现在想想真的是光阴荏苒，犹在眼前。     今年因为爱情又回到了成都，感觉自己对待人对待生活也更加成熟了不少。     回到成都之后一起去旅游，一起坐高铁，一起看电影，一起见家长、见朋友...好多好多，做了好多人生中的第一次，也是我在上海三年也未曾感受到过的快乐。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hexo + github + 腾讯云购买域名复盘">
-<meta property="og:url" content="http://www.zhousong-ld.com/2019/02/21/Hexo-github-%E8%85%BE%E8%AE%AF%E4%BA%91%E8%B4%AD%E4%B9%B0%E5%9F%9F%E5%90%8D%E5%A4%8D%E7%9B%98/index.html">
+<meta property="og:title" content="最近一两年的近况">
+<meta property="og:url" content="http://www.zhousong-ld.com/2021/10/26/%E6%9C%80%E8%BF%91%E4%B8%80%E4%B8%A4%E5%B9%B4%E7%9A%84%E8%BF%91%E5%86%B5/index.html">
 <meta property="og:site_name" content="送你汪洋中的一条小船">
-<meta property="og:description" content="只是有了搭建一个属于自己网站的冲动，对服务器、域名基本没什么了解，刚开始的时候其实是处于一种懵逼状态的。那么最开始我是从哪里入手的呢？Hexo。在明白自己想要建一个什么样的网站之后，去寻找我想要一个什么要的博客网站，它是怎么做的。这里贴上我同事的个人博客网站http:&#x2F;&#x2F;www.zhanglongdream.com&#x2F;  一、本地安装Hexo，及其学习使用Hexo中文文档   Hexo上手起来还是">
+<meta property="og:description" content="眨眼间距离搭建这个网站已经过去三年多了啊。   我从去上海，到现在又离开上海，中间换了一家公司，接触了很多人，也学到了很多新的技术。现在想想真的是光阴荏苒，犹在眼前。     今年因为爱情又回到了成都，感觉自己对待人对待生活也更加成熟了不少。     回到成都之后一起去旅游，一起坐高铁，一起看电影，一起见家长、见朋友...好多好多，做了好多人生中的第一次，也是我在上海三年也未曾感受到过的快乐。">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://www.zhousong-ld.com/2019/02/21/static/imgs/node_version.png">
-<meta property="og:image" content="http://www.zhousong-ld.com/2019/02/21/static/imgs/tengxunyun.png">
-<meta property="og:image" content="http://www.zhousong-ld.com/2019/02/21/static/imgs/cname.png">
-<meta property="article:published_time" content="2019-02-21T04:43:43.000Z">
-<meta property="article:modified_time" content="2021-09-29T07:57:12.948Z">
+<meta property="article:published_time" content="2021-10-26T09:47:11.000Z">
+<meta property="article:modified_time" content="2021-10-26T10:08:01.288Z">
 <meta property="article:author" content="zhousong-ld">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://www.zhousong-ld.com/2019/02/21/static/imgs/node_version.png">
 
-<link rel="canonical" href="http://www.zhousong-ld.com/2019/02/21/Hexo-github-%E8%85%BE%E8%AE%AF%E4%BA%91%E8%B4%AD%E4%B9%B0%E5%9F%9F%E5%90%8D%E5%A4%8D%E7%9B%98/">
+<link rel="canonical" href="http://www.zhousong-ld.com/2021/10/26/%E6%9C%80%E8%BF%91%E4%B8%80%E4%B8%A4%E5%B9%B4%E7%9A%84%E8%BF%91%E5%86%B5/">
 
 
 <script id="page-configurations">
@@ -49,7 +45,7 @@
   };
 </script>
 
-  <title>Hexo + github + 腾讯云购买域名复盘 | 送你汪洋中的一条小船</title>
+  <title>最近一两年的近况 | 送你汪洋中的一条小船</title>
   
 
 
@@ -154,7 +150,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://www.zhousong-ld.com/2019/02/21/Hexo-github-%E8%85%BE%E8%AE%AF%E4%BA%91%E8%B4%AD%E4%B9%B0%E5%9F%9F%E5%90%8D%E5%A4%8D%E7%9B%98/">
+    <link itemprop="mainEntityOfPage" href="http://www.zhousong-ld.com/2021/10/26/%E6%9C%80%E8%BF%91%E4%B8%80%E4%B8%A4%E5%B9%B4%E7%9A%84%E8%BF%91%E5%86%B5/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -167,7 +163,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          Hexo + github + 腾讯云购买域名复盘
+          最近一两年的近况
         </h1>
 
         <div class="post-meta">
@@ -176,23 +172,17 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
+              
 
-              <time title="创建时间：2019-02-21 12:43:43" itemprop="dateCreated datePublished" datetime="2019-02-21T12:43:43+08:00">2019-02-21</time>
+              <time title="创建时间：2021-10-26 17:47:11 / 修改时间：18:08:01" itemprop="dateCreated datePublished" datetime="2021-10-26T17:47:11+08:00">2021-10-26</time>
             </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-09-29 15:57:12" itemprop="dateModified" datetime="2021-09-29T15:57:12+08:00">2021-09-29</time>
-              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E6%8A%80%E6%9C%AF/" itemprop="url" rel="index"><span itemprop="name">技术</span></a>
+                  <a href="/categories/%E4%B8%AA%E4%BA%BA%E6%83%85%E6%84%9F/" itemprop="url" rel="index"><span itemprop="name">个人情感</span></a>
                 </span>
             </span>
 
@@ -207,56 +197,18 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <blockquote>
-<p>只是有了搭建一个属于自己网站的冲动，对服务器、域名基本没什么了解，刚开始的时候其实是处于一种懵逼状态的。那么最开始我是从哪里入手的呢？<code>Hexo</code>。在明白自己想要建一个什么样的网站之后，去寻找我想要一个什么要的博客网站，它是怎么做的。这里贴上我同事的个人博客网站<a target="_blank" rel="noopener" href="http://www.zhanglongdream.com/">http://www.zhanglongdream.com/</a></p>
-</blockquote>
-<h2 id="一、本地安装Hexo，及其学习使用"><a href="#一、本地安装Hexo，及其学习使用" class="headerlink" title="一、本地安装Hexo，及其学习使用"></a>一、本地安装Hexo，及其学习使用</h2><p><a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/">Hexo中文文档</a></p>
-<p>  Hexo上手起来还是非常简单的，首先确保自己的电脑中<code>Node</code>环境和<code>git</code>均已安装。网上的教程很多，这里就不再赘述。命令行查看自身<code>node</code>及<code>git</code>版本：</p>
-<pre><code>$ node -v
-$ git --version
-</code></pre>
-<p>  运行结果为<img src="../static/imgs/node_version.png">表示<code>node</code>、<code>git</code>均已成功安装。接下来<code>npm</code>运行以下命令安装Hexo</p>
-<pre><code>$ npm install -g hexo-cli
-</code></pre>
-<p>  接下来根据文档逐步执行Hexo项目初始化命令</p>
-<pre><code>$ hexo init my-blog // 此处的&#39;my-blog&#39;即为自己的Hexo文件名
-$ cd my-blog
-$ npm install
-</code></pre>
-<p>  打开<code>my-blog</code>，可以看到目录列表：</p>
-<pre><code>.
-├── _config.yml  // 整个项目的配置文件，包括页面的标题、作者、语言等等
-├── package.json  // 依赖包配置文件
-├── scaffolds  // Hexo的模块文件夹，在命令行新建文章的时候会根据此文件的模板进行文章内容填充，可以与html中的模板引擎类比理解
-├── source  // 资源文件夹。文章中需要引用的静态图片之类的文件可以放在这个文件夹下，包括Hexo编译前的markdown文件，也在这个目录下
-|   ├── _drafts
-|   └── _posts
-└── themes  // 主题文件，Hexo初始化的主题并不为next，即本网站所使用的主题。需后续在此目录下修改
-</code></pre>
-<p>  然后我在了解了一些<code>_config.yml</code>及Hexo的基本命令之后就直接开始了写作</p>
-<pre><code>$ hexo new post hello-world
-</code></pre>
-<p>  命令行运行之后在<code>source - _posts</code>文件夹下就会多出来一个<code>hello-world.md</code>，这个文件就是我们的文章文件了。我们对它进行修改，然后运行</p>
-<pre><code>$ hexo g
-</code></pre>
-<p>  这个命令其实是<code>hexo generate</code>的缩写，功能是生成静态文件。<br>  我们可以看到项目中多出来一个<code>public</code>文件夹，即为Hexo帮我们编译之后生成的静态页面文件夹。</p>
-<p>  生成静态文件之后其实就可以运行Hexo的<code>deploy</code>命令部署到我们的服务器上。不过我们想在本地查看一下，类似平时开发web项目的npm start运行于本地一样，命令行敲入</p>
-<pre><code>$ hexo server
-</code></pre>
-<p>  启动服务器，类似webpack server，浏览器打开<code>http://localhost:4000/</code>就可以看到正在进行的效果。</p>
-<p>  确认无误之后就到了部署到服务器这一环节。做为一个不太懂服务器啊部署啊这一方面的前端菜鸟来说是很痛苦的，在网上找了很久，如果服务器不做其它用途的话买服务器也太不划算了…找到一个折中并且简单的方法：hexo + github搭建自己的博客。</p>
-<h2 id="二、将博客部署到自己的域名"><a href="#二、将博客部署到自己的域名" class="headerlink" title="二、将博客部署到自己的域名"></a>二、将博客部署到自己的域名</h2><p>  贴上自己的域名：<a href="www.zhousong-ld.com">www.zhousong-ld.com</a></p>
-  <p style='color: #253A4E;'>1.在自己的github仓库中新建一个名为`username.github.io`的仓库，username即为个人的github名</p><p style='color: #253A4E;'>2.修改前面提到过的`_config.yml`文件，将`deploy`字段下`repo`对应的值修改为刚才新建的github仓库地址，然后命令行执行`hexo deploy`</p><p style='color: #253A4E;'>3.在腾讯云购买一个域名、完成网站备案，cname到自己购买的域名</p>
-
-<p>  cname步骤：</p>
-<p>  <img src="../static/imgs/tengxunyun.png"></p>
-<pre><code>增加一条记录，cname到自己的github地址
-</code></pre>
-<p>  <img src="../static/imgs/cname.png"></p>
-<pre><code>在`source`文件夹下新增`cname`文件
-</code></pre>
-<p><b><code>hexo g</code> 然后 <code>hexo d</code>，大功告成！</b></p>
-
+        <p style="color: #8d8d8d;">  眨眼间距离搭建这个网站已经过去三年多了啊。
+  我从去上海，到现在又离开上海，中间换了一家公司，接触了很多人，也学到了很多新的技术。现在想想真的是光阴荏苒，犹在眼前。
+    今年因为爱情又回到了成都，感觉自己对待人对待生活也更加成熟了不少。
+</p>
+<p style="color: #575757;">
+  回到成都之后一起去旅游，一起坐高铁，一起看电影，一起见家长、见朋友...好多好多，做了好多人生中的第一次，也是我在上海三年也未曾感受到过的快乐。说起来在一起这么久了，从今年3月11号到现在，却从未吵过架，想想都让人感到心安。emmmmm除了我弄哭过她几次，对此我真的感到很抱歉。哭得梨花带雨的时候真是让人揪心心疼，和不知所措。
+</p>
+<p style="color: #575757;">
+  昨天晚上一起去川音吃饭的时候，由于她前面吃多了就看着我吃。买了她喜欢的梅干菜扣肉饼，我在一边吃，她在一边眼睛都看直了然后一边bia叽嘴的样子也太可爱了hhhhhh。被萌化了。
+</p>
+<p style="color: #575757;">这一幕我希望并且想一生都能回忆得起来。</p>
+<p style="color: #575757;">结果后面她还是吃了很多！她以为我是跟她一样担心她长胖，其实我一点都不担心她长胖好吗。只是她经常不知道饱把自己吃得很撑，导致晚上睡不着觉，我怎么敢让她晚上的时候吃太多。气！</p>
     </div>
 
     
@@ -271,13 +223,10 @@ $ npm install
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2019/02/18/hello-world/" rel="prev" title="内心活动以及Hello world">
-      <i class="fa fa-chevron-left"></i> 内心活动以及Hello world
+    <a href="/2019/02/21/Hexo-github-%E8%85%BE%E8%AE%AF%E4%BA%91%E8%B4%AD%E4%B9%B0%E5%9F%9F%E5%90%8D%E5%A4%8D%E7%9B%98/" rel="prev" title="Hexo + github + 腾讯云购买域名复盘">
+      <i class="fa fa-chevron-left"></i> Hexo + github + 腾讯云购买域名复盘
     </a></div>
-      <div class="post-nav-item">
-    <a href="/2021/10/26/%E6%9C%80%E8%BF%91%E4%B8%80%E4%B8%A4%E5%B9%B4%E7%9A%84%E8%BF%91%E5%86%B5/" rel="next" title="最近一两年的近况">
-      最近一两年的近况 <i class="fa fa-chevron-right"></i>
-    </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
@@ -336,7 +285,6 @@ $ npm install
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%80%E3%80%81%E6%9C%AC%E5%9C%B0%E5%AE%89%E8%A3%85Hexo%EF%BC%8C%E5%8F%8A%E5%85%B6%E5%AD%A6%E4%B9%A0%E4%BD%BF%E7%94%A8"><span class="nav-number">1.</span> <span class="nav-text">一、本地安装Hexo，及其学习使用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%8C%E3%80%81%E5%B0%86%E5%8D%9A%E5%AE%A2%E9%83%A8%E7%BD%B2%E5%88%B0%E8%87%AA%E5%B7%B1%E7%9A%84%E5%9F%9F%E5%90%8D"><span class="nav-number">2.</span> <span class="nav-text">二、将博客部署到自己的域名</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
